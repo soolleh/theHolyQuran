@@ -12,8 +12,25 @@ body {
   margin:0px;*/
  
 }
-
-
+:lang(ar)   {font-family: "Scheherazade",serif; 
+                 font-size: 120%;}
+/*@font-face {
+  font-family:'A_Nefel_Sereke';
+  src:url('../fonts/AarcoverRegular.ttf');
+}*/
+/*:lang(ar)   {
+    font-family: "A_Nefel_Sereke";
+    font-size: 120%;
+    }
+p{
+  color: black;
+  font-family: verdana;
+  font-size: 30px;
+}*/
+.arabic{
+  color: black;
+  font-size: 30px;
+}
 /**********************************************Large devices only **************************************************/
 @media (min-width: 1200px) {
 
