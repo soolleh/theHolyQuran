@@ -12,12 +12,12 @@ body {
   margin:0px;*/
  
 }
-:lang(ar)   {font-family: "Scheherazade",serif; 
+:lang(ar)   {font-family: "DubaiW23-Regular",serif; 
                  font-size: 120%;}
-/*@font-face {
-  font-family:'A_Nefel_Sereke';
-  src:url('../fonts/AarcoverRegular.ttf');
-}*/
+@font-face {
+  font-family:'DubaiW23-Regular';
+  src:url('../fonts/DubaiW23-Regular.ttf');
+}
 /*:lang(ar)   {
     font-family: "A_Nefel_Sereke";
     font-size: 120%;
