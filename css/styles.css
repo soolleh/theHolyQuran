@@ -3,33 +3,68 @@ body {
   color: #fff;
   box-sizing: border-box;
   font-family: 'Oxygen', sans-serif;
-  /*background: url('../images/paisley.png');*//*center center fixed;
+  background: url('../images/bg3.jpg') center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
-/*  padding: 0px;
-  margin:0px;*/
+  background-size: cover;
+padding: 0px;
+  margin:0px;
+  color: black;
  
 }
-:lang(ar)   {font-family: "DubaiW23-Regular",serif; 
-                 font-size: 120%;}
+/*:lang(ar)   {font-family: times,serif; 
+                 font-size: 100%;}*/
 @font-face {
-  font-family:'DubaiW23-Regular';
-  src:url('../fonts/DubaiW23-Regular.ttf');
+  font-family:'winsoftserifpro';
+  src:url('../fonts/winsoftserifpro.otf');
 }
-/*:lang(ar)   {
-    font-family: "A_Nefel_Sereke";
-    font-size: 120%;
-    }
-p{
-  color: black;
-  font-family: verdana;
-  font-size: 30px;
-}*/
+.header-outer-div{
+  padding-top: 100px;
+}
 .arabic{
+  width: 100%;
+  text-align: center;
+  font-family: "winsoftserifpro";
   color: black;
-  font-size: 30px;
+  font-size: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.logo-img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo-text{
+  text-align: center;
+}
+.account{
+  color: black;
+  font-size: 25px;
+  height: 10px;
+  display: flex;
+  justify-content: center 
+}
+.account > a{
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.account > a:hover{
+  text-decoration: none;
+  color: #444aa1;
+
+}
+
+.header-links-list{
+  font-size: 16px;
+  padding:8px;
+}
+.Surah-list{
+  font-size: 1.3em;
 }
 /**********************************************Large devices only **************************************************/
 @media (min-width: 1200px) {
