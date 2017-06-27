@@ -19,9 +19,7 @@ padding: 0px;
   font-family:'winsoftserifpro';
   src:url('../fonts/winsoftserifpro.otf');
 }
-.header-outer-div{
-  padding-top: 100px;
-}
+
 .arabic{
   width: 100%;
   text-align: center;
@@ -68,6 +66,9 @@ padding: 0px;
 }
 /**********************************************Large devices only **************************************************/
 @media (min-width: 1200px) {
+  .header-outer-div{
+  padding-top: 100px;
+}
 
 }
 
@@ -75,6 +76,9 @@ padding: 0px;
 
 /**********************************************Medium devices only**************************************************/
 @media (min-width: 992px) and (max-width: 1199px){
+  .header-outer-div{
+  padding-top: 100px;
+}
 
 }
 
@@ -82,6 +86,9 @@ padding: 0px;
 
 /**********************************************Small devices only***************************************************/
 @media (min-width: 768px) and (max-width: 991px) {
+  .header-outer-div{
+  padding-top: 60px;
+}
 
 }
 
