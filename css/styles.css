@@ -96,13 +96,17 @@ padding: 0px;
 
 /**********************************************Extra small devices only ********************************************/
 @media (max-width: 767px) {
-
+  .header-outer-div{
+  padding-top: 60px;
+}
 
 }
 
 /**********************************************Very Extra small devices only ***************************************/
 @media (max-width: 520px) {
-
+  .header-outer-div{
+  padding-top: 60px;
+}
 }
 
 
@@ -111,7 +115,9 @@ padding: 0px;
 /**********************************************Super Duper Extra Smal***********************************************/
 @media (max-width: 420px) {
 
-
+  .header-outer-div{
+  padding-top: 60px;
+}
 
 }
 
