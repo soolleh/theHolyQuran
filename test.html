@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<title>Tets</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- *****Style Sheets***** -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/logIn.css">
+	<!-- *****Scripts***** -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #EDDABC;">
+<style>
+	.footter{
+		font-family: verdana;
+		font-size: 24px;
+		text-align: center;
+		color: white;
+		font-weight:normal;
+ 	 }
+	.panel-primary > .panel-heading{
+		background-color: #112E44;
+		color: white;
+		text-align: center;
+		font-size: 24px;
+		border-radius: 1px;
+		border-bottom: 2px solid #112E44;
+	}
+	.panel{
+		border:2px solid #112E44;
+	}
+	.searchBar > input[type=text]{
+		margin: 0px;
+		border-bottom: 2px solid #112E44;
+		border-top:none;
+		border-right: none;
+		border-left:none;
+		color: black;
+		font-size: 18px;
+		padding: 20px;
+		width : 160px;
+		height: 30px;	
+	}
+	.searchBar > input[type=text]:focus{
+		margin: 0px;
+		border-bottom: 2px solid #112E44;
+		box-shadow: 0 1px 5px 1px #112E44;
+		color: white;
+		height: 30px;
+		background-color: white;
+		color: black;
+		font-size: 18px;
+		padding: 20px;
+	}
+	.searchBar{
+		text-align: center;
+	}
+	.searchBtn{
+		position: relative;
+		height: 40px;
+		background-color: #337ab7;
+		border: 2px solid #337ab7;
+		border-radius: 5px;
+		top: 3px;
+		left: -5px;	
+	}
+	.searchBtn > span{
+		padding: 10px;
+		font-size: 18px;
+		color: white;
+	}
+	.Plus_sign{
+		background-color: white;
+		border:none;
+		font-size: 18px;
+		color: #337ab7;
+		padding-right: 10px;
+		border-right: 2px solid #ccc;
+		margin-right: 10px;
+	}
+	.list-group-item{
+		font-size: 18px;
+	}
+	.Plus_sign:hover{
+		color: #112E44;
+		cursor: pointer;
+	}
+	.mem-rating{
+		font-size: 24px;
+	}
+	.surah-panel{
+		display: none;
+	}
+	.surah-info{
+		margin-top: 10px;
+		padding: 20px;
+		padding-top: 0px;
+	}
+	.ayats{
+		margin-right: 20px;
+	}
+	.ruku{
+		margin-right: 20px;
+	}
+/*	button.Plus-sign:after{
+		content: '\02795';
+		height: 35px;
+		background-color: white;
+		border:none;
+		font-size: 24px;
+		color: #337ab7;
+		padding-right: 10px;
+		border-right: 2px solid #ccc;
+		margin-right: 10px;
+
+	}*/
+</style>
+<script>
+	function openPanel(number) {
+		var i = number;
+		var panel = document.getElementsByClassName("surah-panel");
+		var Paneldisplay = panel[i].style.display;
+		if (Paneldisplay == 'none' || Paneldisplay == '') {
+			panel[i].style.display = "block" ;
+			var pSign = document.getElementsByClassName("Plus_sign");
+			pSign[i].innerHTML = "&#10134;"
+		}
+		else {
+			var panel = document.getElementsByClassName("surah-panel");
+			panel[i].style.display = "none" ;
+			var pSign = document.getElementsByClassName("Plus_sign");
+			pSign[i].innerHTML = "&#10133;";
+		}
+		
+	}
+	function myFunction(){
+		alert('I was pressed');
+	}
+</script>
+<header>
+	<div class="container-fluid header-outer-div">
+		<div class="container header-inner-div">
+			<div class="logo">
+				<a href="index.php"><img class="logo-img img-responsive" src="images/logo1.png" width="100" height="100"></a>
+					<span class="arabic" dir="rtl" lang="ar"><span class="arabic-text">القران الکریم</span></span>
+			</div>
+		</div>
+	</div>
+</header
+><br>
+<div class="container-fluid">
+	<div class="container"> <br>
+		<div class="panel panel-primary">
+			<div class="panel-heading">Surah List</div>
+			<div class="panel-body">
+				<div class="searchBar">
+					<input type="text" name="search" placeholder="Search Surah"/>
+					<button class="searchBtn"><span>&#128269; Search</span></button>
+				</div><br>
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="list-group">
+							<li class="list-group-item"><button title="Click To Expand" class="Plus_sign" onclick="openPanel('0');">&#10133;</button><a href="rukuView.html#1">Al Fateh</a>  
+								<div class="surah-panel">
+									<div class="surah-info">
+										<span class="ayats">Ayats : 7 </span>
+										<span class="ruku">Ruku : 1 </span>
+										<span class="origin">Makki </span><br>	
+										<span class="mem-rating">&#10025; &#10025; &#10025; &#10025; &#10025;</span>
+									</div>
+								
+								</div>
+							</li>
+							<li class="list-group-item"><button title="Click To Expand" class="Plus_sign" onclick="openPanel('1');">&#10133;</button> <a href="rukuView.html#2">Al Baqarah</a>
+								<div class="surah-panel">
+									<div class="surah-info">
+										<span class="ayats">Ayats : 286 </span>
+										<span class="ruku">Ruku : 40 </span>
+										<span class="origin">Madani </span><br>	
+										<span class="mem-rating">&#10025; &#10025; &#10025;</span>
+									</div>
+								
+								</div>
+							</li>
+							<li class="list-group-item"><button title="Click To Expand" class="Plus_sign" onclick="openPanel('2');">&#10133;</button><a href="rukuView.html#3"> Aal'i Imran </a>
+								<div class="surah-panel">
+									<div class="surah-info">
+										<span class="ayats">Ayats : 200 </span>
+										<span class="ruku">Ruku : 20 </span>
+										<span class="origin">Madani </span><br>	
+										<span class="mem-rating">&#10025; &#10025;</span>
+									</div>
+								
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="list-group">
+							<li class="list-group-item"><button title="Click To Expand" class="Plus_sign" onclick="openPanel('3');">&#10133;</button><a href="rukuView.html#4"> Al Nisa </a>
+								<div class="surah-panel">
+									<div class="surah-info">
+										<span class="ayats">Ayats : 176 </span>
+										<span class="ruku">Ruku : 24 </span>
+										<span class="origin">Madani </span><br>	
+										<span class="mem-rating">&#10025; &#10025; &#10025; &#10025; &#10025;</span>
+									</div>
+								
+								</div>
+							</li>
+							<li class="list-group-item"><button title="Click To Expand" class="Plus_sign" onclick="openPanel('4');">&#10133;</button><a href="rukuView.html#5">Al Mai'dah </a>
+								<div class="surah-panel">
+									<div class="surah-info">
+										<span class="ayats">Ayats : 120 </span>
+										<span class="ruku">Ruku : 16 </span>
+										<span class="origin">Madani </span><br>	
+										<span class="mem-rating">&#10025; &#10025; &#10025; &#10025;</span>
+									</div>
+								
+								</div>
+							</li>
+							<li class="list-group-item"><button title="Click To Expand" class="Plus_sign" onclick="openPanel('5');">&#10133;</button><a href="rukuView.html#6">Al An'aam </a>
+								<div class="surah-panel">
+									<div class="surah-info">
+										<span class="ayats">Ayats : 165 </span>
+										<span class="ruku">Ruku : 20 </span>
+										<span class="origin">Makki </span><br>	
+										<span class="mem-rating">&#10025; &#10025; &#10025; &#10025;</span>
+									</div>
+								
+								</div>
+								
+							</li>
+							
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid" style="background-color: #112E44;"><br>
+	<div class="container footter">
+		<footer>
+			Developed By Soleh Firdous Asime 
+			<br> Email : soleh.asmie@gmail.com 
+			<br> Phone : +91-9018-352236
+		</footer> 
+	</div><br>
+</div>
+
+</body>
+</html>

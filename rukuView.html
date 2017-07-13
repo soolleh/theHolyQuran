@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ruku View</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- *****Style Sheets***** -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/logIn.css">
+	<!-- *****Scripts***** -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<script>
+	function openPanel(number) {
+		var i = number;
+		var panel = document.getElementsByClassName("ruku-panel");
+		var Paneldisplay = panel[i].style.display;
+		if (Paneldisplay == 'none' || Paneldisplay == '') {
+			panel[i].style.display = "block" ;
+			var pSign = document.getElementsByClassName("Plus_sign");
+			pSign[i].innerHTML = "&#10134;"
+		}
+		else {
+			var panel = document.getElementsByClassName("ruku-panel");
+			panel[i].style.display = "none" ;
+			var pSign = document.getElementsByClassName("Plus_sign");
+			pSign[i].innerHTML = "&#10133;";
+		}
+		
+	}
+	function myFunction(){
+		alert('I was pressed');
+	}
+</script>
+<style>
+	.logo{
+  	display: block;
+  	width:110px;
+
+}
+	.panel-primary > .panel-heading{
+		background-color: #112E44;
+		color: white;
+		text-align: center;
+		font-size: 24px;
+		border-radius: 1px;
+		border-bottom: 2px solid #112E44;
+	}
+
+	.panel{
+		border:2px solid #112E44;
+	}
+.Plus_sign{
+		background-color: white;
+		border:none;
+		font-size: 18px;
+		color: #337ab7;
+		padding-right: 10px;
+		border-right: 2px solid #ccc;
+		margin-right: 10px;
+	}
+.Plus_sign:hover{
+		color: #112E44;
+		cursor: pointer;
+	}
+	.ruku-panel{
+		display: none;
+	}
+	.ruku-info{
+			margin-top: 10px;
+		padding: 20px;
+		padding-top: 0px;
+	}
+	.ayats, .per-lenght, .mem-rating{
+		margin-right: 20px;
+	}
+	.mem-rating{
+		font-size: 24px;
+	}
+</style>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+      	<div class="container">
+        	<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+					data-target="#collapsable-nav" aria-expanded="false">
+           			Menu <span class="caret"></span>
+          		</button>
+        	</div>
+    	</div>
+        <div id="collapsable-nav" class="container collapse-nav-conatainer collapse navbar-collapse">
+           <ul id="collapsable-nav-list" class="nav navbar-nav navbar-default">
+            	<li><a href="index.html" >Home</a></li>
+                <li><a href="#">Update The Info</a></li>
+                <li><a href="#">Settings</a></li>       
+            </ul> 
+        </div>
+    </nav>
+
+<!-- 	<div class="container-fluid header-outer-div">
+		<div class="container header-inner-div">
+			<div class="logo">
+				<a href="index.php"><img class="logo-img img-responsive" src="../images/logo1.png" width="100" height="100"></a>
+					<span class="arabic" dir="rtl" lang="ar"><span class="arabic-text">القران الکریم</span></span>
+			</div>
+		</div>
+	</div>  -->
+</header>
+<div class="container-fluid">
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Ruku Details</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="list-group">
+							<li class="list-group-item"><button class="Plus_sign" onclick="openPanel('0');">&#10133;</button>Ruku 1
+								<div class="ruku-panel">
+									<div class="ruku-info">
+										<span class="ayats">Ayats : 7 </span>
+										<span class="per-length">Length : 2 Pasges on mobile</span><br>
+										<span class="mem-rating">&#10025;&#10025;&#10025;&#10025;</span><br>
+										<span class="btn btn-primary" role="button">View History</span>
+					
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						
+					</div>	
+				</div>				
+			</div>		
+		</div>		
+	</div>	
+</div>
+</body>
+</html>
